@@ -24,14 +24,14 @@
       </a>
     </h1>
     <div class="nav">
-      <a href="/index/index.html" title="文章">文章</a>
+      <a href="/index.html" title="文章">文章</a>
       <a href="/whisper/index.html" title="微语">微语</a>
       <a href="/leacots/index.html" title="留言">留言</a>
       <a href="/album/index.html" title="相册">相册</a>
       <a href="/about/index.html" title="关于">关于</a>
     </div>
     <ul class="layui-nav header-down-nav">
-      <li class="layui-nav-item"><a href="/index/index.html" title="文章">文章</a></li>
+      <li class="layui-nav-item"><a href="/index.html" title="文章">文章</a></li>
       <li class="layui-nav-item"><a href="/whisper/index.html" title="微语">微语</a></li>
       <li class="layui-nav-item"><a href="/leacots/index.html" title="留言">留言</a></li>
       <li class="layui-nav-item"><a href="/album/index.html" title="相册">相册</a></li>
@@ -273,7 +273,7 @@
   <script src="/layui/layui.js"></script>
   <script type="text/javascript">
     layui.config({
-      baseUrl: 'https://www.sunweidoc.club/leacots/js/util/'
+      window.location.href: 'https://www.sunweidoc.club/leacots/js/util/'
     }).use(['element','laypage','form','menu'],function(){
       element = layui.element,laypage = layui.laypage,form = layui.form,menu = layui.menu;
       laypage.render({
