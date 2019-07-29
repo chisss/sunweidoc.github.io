@@ -18,7 +18,7 @@
       <div class="menu"></div>
     </div>
     <h1 class="logo">
-      <a href="/index.html" title="/index.html">/index.html</a>
+      <a href="/index.html" title="x">x</a>
         <span>MYBLOG</span>
         <img src="https://www.sunweidoc.club/img/logo.png">
       
@@ -172,8 +172,8 @@
   </div>
    <script src="/layui/layui.js"></script>
   <script type="text/javascript">
-    layui.extend({
-      element: 'https://www.sunweidoc.club/js/util/'
+    layui.config({
+      base: 'https://www.sunweidoc.club/js/util/'
     }).use(['element','laypage','jquery','menu'],function(){
       element = layui.element,laypage = layui.laypage,$ = layui.$,menu = layui.menu;
       laypage.render({
@@ -182,6 +182,9 @@
       });
       menu.init();
     })
+    layui.extend({
+
+    });
   </script>
 </body>
 </html>
