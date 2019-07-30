@@ -77,7 +77,7 @@
                     <h3><button class="layui-btn layui-btn-danger new-icon">new</button></h3>
                     <h5>[object Object]</h5>
                     <p></p>
-                    <a href="/2019/07/22/Hexo/安装/" class="layui-btn layui-btn-danger new-icon" role="button">详情</a>
+                    <button id="post" onclick="sendPage(url_for(post.path))" class="layui-btn layui-btn-danger new-icon" role="button">详情</button>
                   </div>
               </div>
               </div>
@@ -192,6 +192,8 @@
       </div>
     </div>
   </div>
+  <!-- 引入 jquery -->
+   <script src="/lib/jquery.min.js"></script>
    <script src="/layui/layui.js"></script>
   <script type="text/javascript">
     layui.config({
@@ -204,9 +206,10 @@
       });
       menu.init();
     })
-    layui.extend({
 
-    });
+    function sendPage(Obj obj){
+      alert(obj)
+    }
   </script>
 </body>
 </html>

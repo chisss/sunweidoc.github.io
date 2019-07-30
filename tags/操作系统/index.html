@@ -77,7 +77,7 @@
                     <h3>CentOS<button class="layui-btn layui-btn-danger new-icon">new</button></h3>
                     <h5>[object Object]</h5>
                     <p></p><p>##CentOS<br>CentOS（Community Enterprise Operating System）是Linux發行版之一，它是來自於Red Hat Enterprise Linux依照開放原始碼規定釋出的原始碼所編譯而成。</p><p></p>
-                    <a href="/2019/07/29/Docker/镜像部署/CentOS/" class="layui-btn layui-btn-danger new-icon" role="button">详情</a>
+                    <button id="post" onclick="sendPage(url_for(post.path))" class="layui-btn layui-btn-danger new-icon" role="button">详情</button>
                   </div>
               </div>
               </div>
@@ -192,6 +192,8 @@
       </div>
     </div>
   </div>
+  <!-- 引入 jquery -->
+   <script src="/lib/jquery.min.js"></script>
    <script src="/layui/layui.js"></script>
   <script type="text/javascript">
     layui.config({
@@ -204,9 +206,10 @@
       });
       menu.init();
     })
-    layui.extend({
 
-    });
+    function sendPage(Obj obj){
+      alert(obj)
+    }
   </script>
 </body>
 </html>
