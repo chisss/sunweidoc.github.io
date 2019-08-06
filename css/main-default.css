@@ -5250,6 +5250,7 @@ body .b-slider--thumb-visible .tp-bullets {
 
 .b-blog-listing__block {
   border: 1px solid #e0e0e0;
+  min-height: 600px;
   margin-bottom: 20px; }
 
 .b-blog-listing__block-top {
@@ -9240,7 +9241,7 @@ h3.f-tabs-vertical__title {
   margin: 0;
   list-style-type: none; }
 .b-categories-filter li {
-  border-bottom: 1px solid #ececec;
+  /* border-bottom: 1px solid #ececec; */
   color: #515151;
   padding: 8px 0 7px; }
 .b-categories-filter i {

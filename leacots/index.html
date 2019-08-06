@@ -2,7 +2,7 @@
 <html>
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <title>孙伟的Blog</title>
     <link rel="shortcut icon" href="favicon.ico">
@@ -32,7 +32,7 @@
 <html>
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <title>孙伟的Blog</title>
     <link rel="shortcut icon" href="favicon.ico">
@@ -125,7 +125,6 @@
 </html>
 
 <!-- end of header -->
-
 <div class="l-main-container">
 
     <div class="b-breadcrumbs f-breadcrumbs">
@@ -141,156 +140,214 @@
     <div class="l-inner-page-container">
         <div class="container">
             <div class="row">
-
                 <div class="col-md-9 col-md-push-3">
-                  <div class="b-blog-listing__block">
+
+                  <div class = 'b-blog-listing__block'>
                     <!DOCTYPE html>
-<html>
-
-
+<html lang="en">
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="utf-8">
-    <title>孙伟的Blog</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-
-
-<!-- Bootstrap css -->
-<link rel="stylesheet" href="/css/bootstrap.min.css">
-<!-- End Bootstrap css -->
-
-
-<!-- Fancybox -->
-<link rel="stylesheet" href="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css">
-<!-- End Fancybox -->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic-ext">
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
-
-<link rel="stylesheet" href="/css/main-default.css">
-<link rel="stylesheet" href="/css/font-awesome-4.7.0/css/font-awesome.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>留言</title>
+  <link rel="stylesheet" href="/layui/css/layui.css">
+  <link rel="stylesheet" href="/css/main.css">
+<!--加载meta IE兼容文件-->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
 </head>
 <body>
-  <div class="b-blog-listing__block">
-    <div class="b-infoblock-with-icon b-blog-listing__infoblock">
-      <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate hidden-xs">
-          <i class="fa fa-pencil"></i>
+  <div class="header">
+    <div class="menu-btn">
+      <div class="menu"></div>
+    </div>
+    <h1 class="logo">
+      <a href="/index.html">
+        <span>MYBLOG</span>
+        <img src="https://www.sunweidoc.club/img/logo.png">
       </a>
-      <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
-          <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-l b-title-b-hr f-title-b-hr">
-              leacots
-          </a>
-          <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text f-primary-b b-blog-listing__pretitle">
-              By <a href="#" class="f-more">sunwei</a> In <a href="#" class="f-more">TecDoc</a>, <a href="#" class="f-more">DataBase</a> 2019-07-24 09:28:16
-              <a href="#" class="f-more b-blog-listing__additional-text f-primary"><i class="fa fa-comment"></i>12 Comments</a>
+    </h1>
+    <div class="nav">
+      <a href="/index">文章</a>
+      <a href="/whisper/index.html" title="微语">微语</a>
+      <a href="leacots/index.html" class="active">留言</a>
+      <a href="/album/index.html" title="相册">相册</a>
+      <a href="/about/index.html" title="关于">关于</a>
+    </div>
+    <ul class="layui-nav header-down-nav">
+      <li class="layui-nav-item"><a href="/index.html" title="文章">文章</a></li>
+      <li class="layui-nav-item"><a href="/whisper/index.html" title="微语">微语</a></li>
+      <li class="layui-nav-item"><a href="/leacots/index.html" title="留言">留言</a></li>
+      <li class="layui-nav-item"><a href="/album/index.html" title="相册">相册</a></li>
+      <li class="layui-nav-item"><a href="/about/index.html" title="关于">关于</a></li>
+    </ul>
+    <p class="welcome-text">
+      欢迎来到<span class="name">孙伟</span>的Blog~
+    </p>
+  </div>
+
+
+  <div class="content whisper-content leacots-content">
+    <div class="cont w1000">
+      <div class="whisper-list">
+        <div class="item-box">
+          <div class="review-version">
+              <div class="form-box">
+                <img class="banner-img" src="https://www.sunweidoc.club/img/liuyan.jpg">
+                <div class="form">
+                  <form class="layui-form" action>
+                    <div class="layui-form-item layui-form-text">
+                      <div class="layui-input-block">
+                        <textarea name="desc" placeholder="既然来了，就说几句" class="layui-textarea"></textarea>
+                      </div>
+                    </div>
+                    <div class="layui-form-item">
+                      <div class="layui-input-block" style="text-align: right;">
+                        <button class="layui-btn definite">確定</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="volume">
+                全部留言 <span>10</span>
+              </div>
+              <div class="list-cont">
+                <div class="cont">
+                  <div class="img">
+                    <img src="https://www.sunweidoc.club/img/header.png" alt>
+                  </div>
+                  <div class="text">
+                    <p class="tit"><span class="name">吳亦凡</span><span class="data">2018/06/06</span></p>
+                    <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <div class="img">
+                    <img src="https://www.sunweidoc.club/img/header.png" alt>
+                  </div>
+                  <div class="text">
+                    <p class="tit"><span class="name">吳亦凡</span><span class="data">2018/06/06</span></p>
+                    <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <div class="img">
+                    <img src="https://www.sunweidoc.club/img/header.png" alt>
+                  </div>
+                  <div class="text">
+                    <p class="tit"><span class="name">吳亦凡</span><span class="data">2018/06/06</span></p>
+                    <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <div class="img">
+                    <img src="https://www.sunweidoc.club/img/header.png" alt>
+                  </div>
+                  <div class="text">
+                    <p class="tit"><span class="name">吳亦凡</span><span class="data">2018/06/06</span></p>
+                    <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <div class="img">
+                    <img src="https://www.sunweidoc.club/img/header.png" alt>
+                  </div>
+                  <div class="text">
+                    <p class="tit"><span class="name">吳亦凡</span><span class="data">2018/06/06</span></p>
+                    <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <div class="img">
+                    <img src="https://www.sunweidoc.club/img/header.png" alt>
+                  </div>
+                  <div class="text">
+                    <p class="tit"><span class="name">吳亦凡</span><span class="data">2018/06/06</span></p>
+                    <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <div class="img">
+                    <img src="https://www.sunweidoc.club/img/header.png" alt>
+                  </div>
+                  <div class="text">
+                    <p class="tit"><span class="name">吳亦凡</span><span class="data">2018/06/06</span></p>
+                    <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
+                  </div>
+                </div>
+                <div class="cont">
+                  <div class="img">
+                    <img src="https://www.sunweidoc.club/img/header.png" alt>
+                  </div>
+                  <div class="text">
+                    <p class="tit"><span class="name">吳亦凡</span><span class="data">2018/06/06</span></p>
+                    <p class="ct">敢问大师，师从何方？上古高人呐逐一地看完你的作品后，我的心久久 不能平静！这世间怎么可能还有如此精辟的作品？我不敢相信自己的眼睛。自从改革开放以后，我就以为再也不会有任何作品能打动我，没想到今天看到这个如此精妙绝伦的作品好厉害！</p>
+                  </div>
+                </div>
+              </div>
           </div>
-          <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text c-primary b-blog-listing__text">
-            
-          </div>
-          <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
-              <a href="#" class="f-more f-primary-b">Read more</a>
-          </div>
+        </div>
+      </div>
+      <div id="demo" style="text-align: center;"></div>
+    </div>
+  </div>
+  <script type="text/html" id="laytplCont">
+    <div class="cont">
+      <div class="img">
+        {{#  if(d.avatar){ }}
+        <img src="{{d.avatar}}" alt="">
+        {{#  } else { }}
+        <img src="https://www.sunweidoc.club/img/header.png" alt="">
+        {{# } }}
+      </div>
+      <div class="text">
+        <p class="tit"><span class="name">{{d.name}}</span><span class="data">2018/06/06</span></p>
+        <p class="ct">{{d.cont}}</p>
+      </div>
+    </div>
+  </script>
+  <div class="footer-wrap">
+    <div class="footer w1000">
+      <div class="qrcode">
+        <img src="img/erweima.jpg">
+      </div>
+      <div class="practice-mode">
+        <img src="https://www.sunweidoc.club/img/down_img.jpg">
+        <div class="text">
+          <h4 class="title">我的联系方式</h4>
+          <p>微信<span class="WeChat">woshige345</span></p>
+          <p>邮箱<span class="email">woshige345@qq.com</span></p>
+        </div>
       </div>
     </div>
   </div>
-<!-- jQuery -->
-<script src="/lib/jquery.min.js"></script>
-<!-- end of jQuery -->
-<!-- bootstrap -->
-<script src="/js/bootstrap.min.js"></script>
-<!-- end bootstrap -->
-
-<!-- Modules -->
-<script src="/js/modules/color-themes.js"></script>
-<!-- End Modules -->
-
-<!-- Google services -->
-<!-- <script src="/js/google/google.service.js"></script> -->
-<!-- end Google services -->
-<!-- Fancybox -->
-<script src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<script src="/js/jquery.fancybox-1.3.4/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
-<script src="/js/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
-<!-- End Fancybox -->
-<!-- 引入 pjax -->
-  <script src="/lib/pjax.min.js"></script>
-
+  <script src="/layui/layui.js"></script>
+  <script type="text/javascript">
+   layui.config({
+     base: 'https://www.sunweidoc.club/js/util/'
+    }).use(['element','laypage','form','menu'],function(){
+      element = layui.element,laypage = layui.laypage,form = layui.form,menu = layui.menu;
+      laypage.render({
+        elem: 'demo'
+        ,count: 70 //数据总数，从服务端得到
+      });
+      menu.init();
+      menu.submit()
+    })
+  </script>
 </body>
 </html>
 
                   </div>
-                    <!-- <div class="b-blog-listing__block">
-                        <div class="b-blog-listing__block-top">
-                            <div class=" view view-sixth">
-                              <img data-retina="" src="img/blog/blog_listing.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="b-infoblock-with-icon b-blog-listing__infoblock">
-                            <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate hidden-xs">
-                                <i class="fa fa-pencil"></i>
-                            </a>
-                            <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
-                                <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-l b-title-b-hr f-title-b-hr">
-                                    Mauris ac risus neque, ut pulvinar risus
-                                </a>
-                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text f-primary-b b-blog-listing__pretitle">
-                                    By <a href="#" class="f-more">Stephen Brock</a> In <a href="#" class="f-more">Lifestyle</a>, <a href="#" class="f-more">Photography</a> Posted May 24th, 2013
-                                    <a href="#" class="f-more b-blog-listing__additional-text f-primary"><i class="fa fa-comment"></i>12 Comments</a>
-                                </div>
-                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text c-primary b-blog-listing__text">
-                                    Pendisse blandit ligula turpis, ac convallis risus fermentum non. Duis vestibulum quis quam vel accumsan. Nunc a vulputate lectus. Vestibulum eleifend nisl sed massa sagittis vestibulum. Vestibulum pretium blandit tellus, sodales volutpat sapien varius vel. Phasellus tristique cursus erat, a placerat tellus laoreet eget. Blandit ligula turpis, ac convallis risus fermentum non. Duis vestibulum quis.
-                                </div>
-                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
-                                    <a href="#" class="f-more f-primary-b">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="b-blog-listing__block">
-                        <div class="b-video-player b-blog-listing__block-top">
-                            <iframe src="http://player.vimeo.com/video/81801013?title=0&amp;byline=0&amp;portrait=0&amp;badge=0" width="870" height="460" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        </div>
-                        <div class="b-infoblock-with-icon b-blog-listing__infoblock">
-                            <a href="#" class="b-infoblock-with-icon__icon f-infoblock-with-icon__icon fade-in-animate hidden-xs">
-                                <i class="fa fa-video-camera"></i>
-                            </a>
-                            <div class="b-infoblock-with-icon__info f-infoblock-with-icon__info">
-                                <a href="#" class="f-infoblock-with-icon__info_title b-infoblock-with-icon__info_title f-primary-l b-title-b-hr f-title-b-hr">
-                                    This Is Vimeo video post
-                                </a>
-                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text f-primary-b b-blog-listing__pretitle">
-                                    By <a href="#" class="f-more">Stephen Brock</a> In <a href="#" class="f-more">Lifestyle</a>, <a href="#" class="f-more">Photography</a> Posted May 24th, 2013
-                                    <a href="#" class="f-more b-blog-listing__additional-text f-primary"><i class="fa fa-comment"></i>12 Comments</a>
-                                </div>
-                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text c-primary b-blog-listing__text">
-                                    Pendisse blandit ligula turpis, ac convallis risus fermentum non. Duis vestibulum quis quam vel accumsan. Nunc a vulputate lectus. Vestibulum eleifend nisl sed massa sagittis vestibulum. Vestibulum pretium blandit tellus, sodales volutpat sapien varius vel. Phasellus tristique cursus erat, a placerat tellus laoreet eget. Blandit ligula turpis, ac convallis risus fermentum non. Duis vestibulum quis.
-                                </div>
-                                <div class="f-infoblock-with-icon__info_text b-infoblock-with-icon__info_text">
-                                    <a href="#" class="f-more f-primary-b">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class="b-pagination f-pagination">
-                      <ul>
-                        <li><a href="#">First</a></li>
-                        <li><a class="prev" href="#"><i class="fa fa-angle-left"></i></a></li>
-                        <li class="is-active-pagination"><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a class="next" href="#"><i class="fa fa-angle-right"></i></a></li>
-                        <li><a href="#">Last</a></li>
-                      </ul>
-                    </div>
-                  </div>
+                </div>
                   <div class="visible-xs-block visible-sm-block b-hr"></div>
                  <!DOCTYPE html>
 <html>
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <title>孙伟的Blog</title>
     <link rel="shortcut icon" href="favicon.ico">
@@ -317,8 +374,8 @@
 <div class="col-md-3 col-md-pull-9">
                     <div class="row">
                       <div class="col-md-12">
-                        <div class="b-form-row b-input-search" id="search">
-                          <input class="form-control" type="text" placeholder="Enter your keywords">
+                        <div class="b-form-row b-input-search"  id = "search">
+                          <input class="form-control" type="text" placeholder="Enter your keywords"/>
                           <span class="b-btn b-btn-search f-btn-search fa fa-search fa-2x"></span>
                         </div>
                       </div>
@@ -365,7 +422,7 @@
                               &nbsp;&nbsp;&nbsp;<a class="f-categories-filter_name" href="/2019/07/29/Docker/基础介绍/04.仓库/"><i class="fa fa-file-text"></i>04.仓库</a>
                             </li>
                             
-                                  </ul></ul></ul></ul></li>
+                                  </li>
                                 </ul>
                                 
                                 <ul>
@@ -401,13 +458,13 @@
                               &nbsp;&nbsp;&nbsp;<a class="f-categories-filter_name" href="/2019/07/29/Docker/镜像部署/Redis/"><i class="fa fa-file-text"></i>Redis</a>
                             </li>
                             
-                                  </ul></ul></ul></ul></ul></li>
+                                  </li>
                                 </ul>
                                 
                                   </li>
                                 </ul>
                                 
-                          
+                          </ul>
           </div>
         </div>
         <div class="col-md-12">
@@ -417,7 +474,7 @@
               <div class="b-blog-short-post b-blog-short-post--img-hover-bordered b-blog-short-post--w-img f-blog-short-post--w-img row">
                 <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
                   <div class="b-blog-short-post__item_img">
-                    <a href="#"><img data-retina src="img/gallery/sm/gallery_1.jpg" alt></a>
+                    <a href="#"><img data-retina src="img/gallery/sm/gallery_1.jpg" alt=""/></a>
                   </div>
                   <div class="b-remaining">
                     <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
@@ -428,10 +485,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="copyrights">Collect from <a href="http://www.cssmoban.com/" title="网站模板">网站模板</a></div>
                 <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
                   <div class="b-blog-short-post__item_img">
-                    <a href="#"><img data-retina src="img/gallery/sm/gallery_2.jpg" alt></a>
+                    <a href="#"><img data-retina src="img/gallery/sm/gallery_2.jpg" alt=""/></a>
                   </div>
                   <div class="b-remaining">
                     <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
@@ -444,7 +500,7 @@
                 </div>
                 <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
                   <div class="b-blog-short-post__item_img">
-                    <a href="#"><img data-retina src="img/gallery/sm/gallery_2.jpg" alt></a>
+                    <a href="#"><img data-retina src="img/gallery/sm/gallery_2.jpg" alt=""/></a>
                   </div>
                   <div class="b-remaining">
                     <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
@@ -457,7 +513,7 @@
                 </div>
                 <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b">
                   <div class="b-blog-short-post__item_img">
-                    <a href="#"><img data-retina src="img/gallery/sm/gallery_3.jpg" alt></a>
+                    <a href="#"><img data-retina src="img/gallery/sm/gallery_3.jpg" alt=""/></a>
                   </div>
                   <div class="b-remaining">
                     <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
@@ -470,7 +526,7 @@
                 </div>
                 <div class="b-blog-short-post--popular col-md-12  col-xs-12 f-primary-b @@hidden">
                   <div class="b-blog-short-post__item_img">
-                    <a href="#"><img data-retina src="img/gallery/sm/gallery_1.jpg" alt></a>
+                    <a href="#"><img data-retina src="img/gallery/sm/gallery_1.jpg" alt=""/></a>
                   </div>
                   <div class="b-remaining">
                     <div class="b-blog-short-post__item_text f-blog-short-post__item_text">
@@ -527,7 +583,7 @@
 </body>
 </html>
 
-    </div>
+               </div>
   </div>
 </div>
 </div>
@@ -535,7 +591,7 @@
 <html>
 
 
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
     <title>孙伟的Blog</title>
     <link rel="shortcut icon" href="favicon.ico">
@@ -563,7 +619,7 @@
   <div class="b-footer-primary">
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 col-xs-12 f-copyright b-copyright">Copyright © 2014 - All Rights Reserved .More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></div>
+            <div class="col-sm-4 col-xs-12 f-copyright b-copyright">Copyright © 2019 - All Rights Reserved .More in<a href="https://sunweidoc.club/" target="_blank" title="孙伟的Blog">孙伟的Blog</a> - Collect from <a href="https://www.sunweidoc.club/" title="孙伟的Blog" target="_blank">孙伟的Blog</a></div>
             <div class="col-sm-8 col-xs-12">
                 <div class="b-btn f-btn b-btn-default b-right b-footer__btn_up f-footer__btn_up j-footer__btn_up">
                     <i class="fa fa-chevron-up"></i>
@@ -635,32 +691,38 @@
         </div>
       </div>
       <div class="col-md-3 col-sm-12 col-xs-12">
-        <h4 class="f-primary-b">contact info</h4>
+        <h4 class="f-primary-b">联系信息</h4>
         <div class="b-contacts-short-item-group">
           <div class="b-contacts-short-item col-md-12 col-sm-4 col-xs-12">
             <div class="b-contacts-short-item__icon f-contacts-short-item__icon f-contacts-short-item__icon_lg b-left">
               <i class="fa fa-map-marker"></i>
             </div>
             <div class="b-remaining f-contacts-short-item__text">
-              Frexy Studio<br>
-                1234 Street Name, City Name,<br>
-                United States.<br>
+              中国 福建省 厦门市
             </div>
           </div>
           <div class="b-contacts-short-item col-md-12 col-sm-4 col-xs-12">
             <div class="b-contacts-short-item__icon f-contacts-short-item__icon b-left f-contacts-short-item__icon_md">
-              <i class="fa fa-skype"></i>
+              <i class="fa fa-weixin"></i>
             </div>
             <div class="b-remaining f-contacts-short-item__text f-contacts-short-item__text_phone">
-                Skype: ask.company
+                woshige345
             </div>
           </div>
           <div class="b-contacts-short-item col-md-12 col-sm-4 col-xs-12">
             <div class="b-contacts-short-item__icon f-contacts-short-item__icon b-left f-contacts-short-item__icon_xs">
-              <i class="fa fa-envelope"></i>
+              <i class="fa fa-qq"></i>
             </div>
             <div class="b-remaining f-contacts-short-item__text f-contacts-short-item__text_email">
-              <a href="mailto:frexystudio@gmail.com">mail@example.com</a>
+              1449949043
+            </div>
+          </div>
+          <div class="b-contacts-short-item col-md-12 col-sm-4 col-xs-12">
+            <div class="b-contacts-short-item__icon f-contacts-short-item__icon b-left f-contacts-short-item__icon_xs">
+              <i class="fa fa-github"></i>
+            </div>
+            <div class="b-remaining f-contacts-short-item__text f-contacts-short-item__text_email">
+              <a href="https://github.com/chisss">https://github.com/chisss</a>
             </div>
           </div>
         </div>
@@ -669,40 +731,40 @@
         <h4 class="f-primary-b">photo stream</h4>
           <div class="b-short-photo-items-group">
     <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_1.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_1.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_1.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_1.jpg" alt=""/></a>
     </div>
     <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_2.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_2.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_2.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_2.jpg" alt=""/></a>
     </div>
     <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_3.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_3.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_3.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_3.jpg" alt=""/></a>
     </div>
     <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_4.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_4.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_4.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_4.jpg" alt=""/></a>
     </div>
     <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_5.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_5.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_5.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_5.jpg" alt=""/></a>
     </div>
     <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_6.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_6.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_6.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_6.jpg" alt=""/></a>
     </div>
     <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_7.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_7.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_7.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_7.jpg" alt=""/></a>
     </div>
     <div class="b-column">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_8.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_8.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_8.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_8.jpg" alt=""/></a>
     </div>
     <div class="b-column hidden-xs">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_9.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_9.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_9.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_9.jpg" alt=""/></a>
     </div>
     <div class="b-column hidden-sm hidden-xs">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_10.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_10.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_10.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_10.jpg" alt=""/></a>
     </div>
     <div class="b-column hidden-sm hidden-xs">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_11.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_11.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_11.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_11.jpg" alt=""/></a>
     </div>
     <div class="b-column hidden-sm hidden-xs">
-        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_12.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_12.jpg" alt></a>
+        <a class="b-short-photo-item fancybox" href="img/gallery/sm/gallery_12.jpg" title="photo stream" rel="footer-group"><img width="62" height="62" data-retina src="img/gallery/sm/gallery_12.jpg" alt=""/></a>
     </div>
 </div>
       </div>

@@ -1,7 +1,7 @@
 $(document).ready(function () {
     clickTreeDirectory();
     serachTree();
-    pjaxLoad();
+    // pjaxLoad();
 });
 
 // 点击目录事件
@@ -91,7 +91,7 @@ function serachTree() {
 }
 function pjaxLoad(){
     $(document).pjax('#tree a', '#b-blog-listing__block', {fragment:'#content', timeout:8000});
-    $(document).pjax('#menu a', '#b-blog-listing__block', {fragment:'#b-blog-listing__block', timeout:8000});
+    $(document).pjax('#menu a', '#b-blog-listing__block', {fragment:'#content', timeout:8000});
     $(document).on({
         "pjax:complete": function(e) {
             $("pre code").each(function (i, block){
