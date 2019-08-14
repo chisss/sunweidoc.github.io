@@ -5250,7 +5250,6 @@ body .b-slider--thumb-visible .tp-bullets {
 
 .b-blog-listing__block {
   border: 1px solid #e0e0e0;
-  min-height: 600px;
   margin-bottom: 20px; }
 
 .b-blog-listing__block-top {
@@ -9236,7 +9235,7 @@ h3.f-tabs-vertical__title {
   .f-sort-panel__inner_icon-sort:hover {
     color: #e26228; }
 .b-categories-filter {
-  min-height: 500px; 
+  min-height: 500px;
 }
 .b-categories-filter ul {
   padding: 0;
@@ -9291,8 +9290,7 @@ h3.f-tabs-vertical__title {
 .b-tag-container {
   margin-top: -5px;
   margin-bottom: -5px;
-  display: inline-block; }
-
+display: inline-block; }
 [class*='b-alert'] {
   display: block;
   padding: 12px 12px 10px 18px; }
